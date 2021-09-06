@@ -56,7 +56,7 @@ int main()
 	Game c1;
 	srand((unsigned int)time(NULL));
 	int i, j = 0;
-	char hi;
+	int hi;
 	int sum1, sum2;
 	int num1 = rand() % 10;
 	int gawibawi = rand() % 3;
@@ -91,19 +91,10 @@ int main()
 	Sleep(800);
 	cout << "바위! ";
 	Sleep(800);
-	cout << "보! ";
+	cout << "보! " << endl;
+	Sleep(500);
+	cout << "(가위는 1 바위는 2 보는 3을 눌러주세요): ";
 	cin >> hi;
-	if ('가위' == hi)
-	{
-		j = 1;
-	}
-	else if ('바위' == hi)
-	{
-		j = 2;
-	}
-	else {
-		j = 3;
-	}
 	cout << "(대충 쏘우는";
 	if (gawibawi == 1)
 	{
@@ -119,7 +110,7 @@ int main()
 		Sleep(700);
 		cout << " 보를 냈다!)" << endl;
 	}
-	if (j == gawibawi)
+	if (hi == gawibawi)
 	{
 		Sleep(1000);
 		cout << "흠..." << endl;
