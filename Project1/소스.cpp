@@ -20,6 +20,7 @@ public:
 		{
 			cout << i << ":" <<s[i] << endl;
 		}
+		cout << endl;
 	}
 private:
 };
